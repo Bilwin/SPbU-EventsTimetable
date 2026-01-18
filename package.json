@@ -1,0 +1,48 @@
+{
+  "name": "spbu-eventstimetable",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "dev:https": "next dev --experimental-https",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "prisma:generate": "prisma generate",
+    "prisma:seed": "prisma db seed"
+  },
+  "dependencies": {
+    "@heroui/calendar": "^2.2.26",
+    "@heroui/react": "^2.8.4",
+    "@prisma/client": "^5.22.0",
+    "@swc/helpers": "^0.5.17",
+    "@telegram-apps/init-data-node": "^2.0.10",
+    "@telegram-apps/telegram-ui": "^2.1.5",
+    "@tma.js/init-data-node": "^2.0.6",
+    "@tma.js/sdk-react": "^3.0.11",
+    "@tonconnect/ui-react": "^2.1.0",
+    "eruda": "^3.0.1",
+    "jsonwebtoken": "^9.0.3",
+    "next": "^15.5.4",
+    "next-intl": "^4.1.0",
+    "normalize.css": "^8.0.1",
+    "react": "^18",
+    "react-dom": "^18"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.1.17",
+    "@types/jsonwebtoken": "^9.0.10",
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "eslint": "^9.39.1",
+    "eslint-config-next": "^16.0.6",
+    "postcss": "^8",
+    "prisma": "^5.19.1",
+    "tailwindcss": "^4.1.13",
+    "typescript": "^5"
+  },
+  "prisma": {
+    "seed": "node prisma/seed.js"
+  }
+}
